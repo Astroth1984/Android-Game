@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".AudioSettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="80dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp">
+
+        <Button
+            android:id="@+id/audio_file_managing_button"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audio_file_localy_button"
+            android:layout_weight="1"
+            android:text="manage"
+            android:theme="@style/AppTheme.Button" />
+
+        <Button
+            android:id="@+id/audio_file_localy_button"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audio_file_server_button"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="Import/export localy"
+            android:theme="@style/AppTheme.Button" />
+
+        <Button
+            android:id="@+id/audio_file_server_button"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="import/export server"
+            android:theme="@style/AppTheme.Button" />
+    </RelativeLayout>
+
+
+</LinearLayout>
